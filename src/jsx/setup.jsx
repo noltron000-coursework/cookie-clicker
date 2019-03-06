@@ -1,4 +1,4 @@
-// import react components
+// import react modules
 import React from 'react'
 
 // import other stored files
