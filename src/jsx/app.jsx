@@ -2,7 +2,6 @@
 import React, { Component } from 'react'
 
 // import components
-// import Setup from '../jsx/setup.jsx'
 import Title from '../jsx/title.jsx'
 import Cookie from '../jsx/cookie.jsx'
 
@@ -14,7 +13,6 @@ class App extends Component {
 	render() {
 		return (
 			<div >
-				{/* <Setup /> */}
 				<Title />
 				<Cookie />
 			</div>
