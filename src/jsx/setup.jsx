@@ -1,9 +1,9 @@
 // import react modules
-import React from 'react';
+import React from 'react'
 
 // import other stored files
-import '../css/setup.css';
-import logo from '../img/logo.svg';
+import '../css/setup.css'
+import logo from '../img/logo.svg'
 
 // use es6 function for non-dynamic assets
 const Setup = () => {

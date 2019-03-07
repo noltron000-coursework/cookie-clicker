@@ -1,8 +1,8 @@
 // import react modules
-import React from 'react';
+import React from 'react'
 
 // import other stored files
-import '../css/title.css';
+import '../css/title.css'
 
 const Title = () => {
 	return (
@@ -17,4 +17,4 @@ const Title = () => {
 	)
 }
 
-export default Title;
+export default Title
