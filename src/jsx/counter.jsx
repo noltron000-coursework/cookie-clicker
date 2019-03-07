@@ -7,7 +7,7 @@ class Counter extends Component {
 		return (
 			<div >
 				<label>Current Cookies:</label> <br />
-				<output>0</output>
+				<output>{this.props.cookies}</output>
 			</div>
 		)
 	}

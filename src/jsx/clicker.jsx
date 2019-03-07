@@ -2,8 +2,8 @@
 import React, { Component } from 'react'
 
 class Clicker extends Component {
-	increase() {
-
+	increase = () => {
+		this.props.increase();
 	}
 
 	render() {

@@ -7,15 +7,22 @@ import Clicker from '../jsx/clicker.jsx'
 
 class Cookie extends Component {
 	constructor(props) {
-		// Required step: always call the parent class' constructor
+		// REQUIRED: always call the parent class' constructor
 		super(props)
-
+		// initialize cookies
+		this.state = { cookies: 0 }
 	}
+
+	increase = () => {
+		const count = this.state.cookies + 1
+		this.setState({ cookies: count })
+	}
+
 	render() {
 		return (
 			<div >
-				<Counter />
-				<Clicker />
+				<Counter cookies={this.state.cookies} />
+				<Clicker increase={this.increase} />
 			</div>
 		)
 	}
