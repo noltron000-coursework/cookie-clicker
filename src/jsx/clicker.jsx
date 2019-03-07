@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 
 class Clicker extends Component {
+	// this will run the parent function--increase()
 	increase = () => {
 		this.props.increase();
 	}

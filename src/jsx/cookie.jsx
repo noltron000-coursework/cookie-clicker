@@ -6,6 +6,7 @@ import Counter from '../jsx/counter.jsx'
 import Clicker from '../jsx/clicker.jsx'
 
 class Cookie extends Component {
+	// construct state variables
 	constructor(props) {
 		// REQUIRED: always call the parent class' constructor
 		super(props)
@@ -16,6 +17,7 @@ class Cookie extends Component {
 		}
 	}
 
+	// increase cookies by click-power
 	increase = () => {
 		const click_power = 2 ** (Math.floor(this.state.clicks / 10))
 		const count = this.state.cookies + click_power
