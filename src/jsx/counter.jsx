@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 class Counter extends Component {
 	render() {
 		return (
-			<div >
+			<div className='large'>
 				<label>Current Cookies:</label> <br />
 				<output>{this.props.cookies}</output>
 			</div>

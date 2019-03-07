@@ -8,7 +8,7 @@ class Clicker extends Component {
 
 	render() {
 		return (
-			<div >
+			<div className='large'>
 				<button onClick={this.increase}>More Cookies!</button>
 			</div>
 		)
