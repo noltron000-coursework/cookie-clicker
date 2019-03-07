@@ -10,12 +10,19 @@ class Cookie extends Component {
 		// REQUIRED: always call the parent class' constructor
 		super(props)
 		// initialize cookies
-		this.state = { cookies: 0 }
+		this.state = {
+			cookies: 0,
+			clicks: 0,
+		}
 	}
 
 	increase = () => {
-		const count = this.state.cookies + 1
-		this.setState({ cookies: count })
+		const click_power = 2 ** (Math.floor(this.state.clicks / 10))
+		const count = this.state.cookies + click_power
+		this.setState({
+			cookies: count,
+			clicks: this.state.clicks + 1,
+		})
 	}
 
 	render() {
